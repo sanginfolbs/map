@@ -82,7 +82,10 @@
         marker = new google.maps.Marker({
             position: latlng,
             map: map,
-            icon: "http://www.retro.posten.no/_public/themes/shared/geodata/images/map_location_dot_big.png?_ts=1506b6fe638",
+            icon: {url:"http://www.retro.posten.no/_public/themes/shared/geodata/images/map_location_dot_big.png?_ts=1506b6fe638",
+            scaledSize: new google.maps.Size(40, 40),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(20, 20)},
             title: "Your current location!"
         });
 
